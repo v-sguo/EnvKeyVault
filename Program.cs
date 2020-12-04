@@ -6,8 +6,9 @@ namespace TestEnvKeyVault
     {
         static void Main(string[] args)
         {
-            var mySecret = Environment.GetEnvironmentVariable("MySecret");
-            if(mySecret == "IHave3Cats")
+            var mySecret = Environment.GetEnvironmentVariable("cvatPassword");
+            Console.WriteLine($"This is mySecret: {mySecret}");
+            if(mySecret == "Admin200812!")
             {
                 Console.WriteLine("Correct Environment Variable");
             }
