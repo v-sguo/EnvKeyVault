@@ -12,10 +12,10 @@ pool:
 steps:
 - task: AzureKeyVault@1
   inputs:
-    azureSubscription: 'ConnectionToAzure'
-    KeyVaultName: 'kenakamukeys'
+    azureSubscription: 'Azure Vision Machine Learning Platform Team (3cfa45ba-9ce3-42fb-9e1a-47374e9dea5b)'
+    KeyVaultName: 'acv-dp-wu2-t-001-kv'
     SecretsFilter: '*'
-    RunAsPreJob: false
+    RunAsPreJob: true
 
 - task: DotNetCoreCLI@2
   displayName: 'build my app'
